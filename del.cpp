@@ -8,9 +8,11 @@ int main()
 	int numbery;
 	int magic;
 	magic= rand()%100;
+	do{
 	std::cout <<"\t"<< "Input your number "<<"\n";
 	std::cin >> numbery;
 	std::cout <<"\t"<<"Magic number is "<< magic << '\n';
+
 	if (magic==numbery) {
 		std::cout << "You won " << '\n';
 	}
@@ -21,5 +23,7 @@ int main()
  }
  else
  std::cout << "Your number more than magic number" << '\n';
+}
+ while(numbery!=magic);
 	return 0;
 }
